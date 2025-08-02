@@ -14,9 +14,10 @@ function checkAnswer() {
         feedback.textContent = 'Correct! Well done.';
         feedback.classList.add('correct');
     } else {
-        feedback.textContent = 'Incorrect. Try again!';
+        feedback.textContent = "That's Incorrect. Try again!";
         feedback.classList.add('incorrect');
     }
 
 }
+
 
