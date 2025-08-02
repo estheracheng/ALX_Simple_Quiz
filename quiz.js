@@ -1,3 +1,4 @@
+const correctAnswer = '4';
 function checkAnswer() {
     const selected = document.querySelector('input[name="quiz"]:checked');
     const feedback = document.getElementById('feedback');
@@ -8,11 +9,12 @@ function checkAnswer() {
         feedback.classList.add('incorrect');
         return;
     }
-    if (selected.value === '4') {
+    if (selected.value === correctAnswer) {
         feedback.textContent = 'Correct! Well done.';
         feedback.classList.add('correct');
     } else {
         feedback.textContent = 'Incorrect. Try again!';
         feedback.classList.add('incorrect');
     }
+
 }
