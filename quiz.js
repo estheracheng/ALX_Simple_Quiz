@@ -1,4 +1,5 @@
 const correctAnswer = '4';
+// "That's incorrect. Try again!"
 function checkAnswer() {
     const selected = document.querySelector('input[name="quiz"]:checked');
     const feedback = document.getElementById('feedback');
@@ -19,5 +20,6 @@ function checkAnswer() {
     }
 
 }
+
 
 
