@@ -8,8 +8,9 @@ function checkAnswer() {
         feedback.textContent = 'Please select an answer';
         feedback.classList.add('incorrect');
         return;
+    const userAnswer = selected.value
     }
-    if (selected.value === correctAnswer) {
+    if (userAnswer === correctAnswer) {
         feedback.textContent = 'Correct! Well done.';
         feedback.classList.add('correct');
     } else {
@@ -18,3 +19,4 @@ function checkAnswer() {
     }
 
 }
+
