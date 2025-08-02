@@ -20,6 +20,8 @@ function checkAnswer() {
     }
 
 }
+document.getElementById('submit-btn').addEventListener('click', checkAnswer);
+
 
 
 
